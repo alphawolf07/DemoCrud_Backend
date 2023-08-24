@@ -18,6 +18,7 @@ namespace Demo.Controllers
         {
             if(_context.CrudEntity==null)
             {
+                //Checking if database exists or not
                 return BadRequest("Database not found!");
             }
             try
